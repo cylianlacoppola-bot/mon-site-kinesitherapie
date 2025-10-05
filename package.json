@@ -1,0 +1,60 @@
+{
+  "name": "mon-site-kinesitherapie",
+  "version": "1.0.0",
+  "description": "Site web professionnel pour Cylian Lacoppola - Étudiant en kinésithérapie",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/index.html",
+    "build": "npm run minify-css && npm run minify-js && npm run optimize-html",
+    "minify-css": "cleancss -o dist/styles.min.css styles.css",
+    "minify-js": "terser script.js -o dist/script.min.js",
+    "optimize-html": "html-minifier --collapse-whitespace --remove-comments --minify-css --minify-js -o dist/index.html index.html",
+    "setup": "npm install && mkdir -p dist",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean && mkdir -p dist && cp content.json dist/",
+    "lint": "eslint script.js",
+    "format": "prettier --write *.html *.css *.js *.json",
+    "commit": "git add . && git commit",
+    "push": "git push origin main",
+    "deploy": "npm run build && npm run commit -m 'Build and deploy' && npm run push",
+    "validate-html": "html-validate index.html",
+    "validate-css": "stylelint styles.css",
+    "test": "npm run validate-html && npm run validate-css && npm run lint",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "kinésithérapie",
+    "physiotherapy",
+    "santé",
+    "rééducation",
+    "étudiant",
+    "portfolio"
+  ],
+  "author": "Cylian Lacoppola",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cylianlacoppola-bot/mon-site-kinesitherapie.git"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.19.4",
+    "html-minifier": "^4.0.0",
+    "rimraf": "^5.0.1",
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.3",
+    "html-validate": "^8.2.0",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}

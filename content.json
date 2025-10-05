@@ -1,0 +1,139 @@
+{
+  "personal": {
+    "name": "Cylian Lacoppola",
+    "title": "Étudiant en 3ème année de Kinésithérapie",
+    "subtitle": "Je me forme pour aider les personnes à bouger mieux, avec bienveillance.",
+    "email": "cylianlacoppola@gmail.com",
+    "phone": "+33628480262",
+    "university": "Université de Szeged",
+    "year": "3ème année kinésithérapie",
+    "ranking": "QS #597"
+  },
+  "meta": {
+    "title": "Cylian Lacoppola — Étudiant en Kinésithérapie",
+    "description": "Étudiant en kinésithérapie — présentation, services encadrés, et contact.",
+    "ogTitle": "Cylian Lacoppola — Étudiant en Kinésithérapie",
+    "ogDescription": "Présentation, services dans le cadre de mes études et moyens de contact."
+  },
+  "navigation": [
+    { "href": "#accueil", "text": "Accueil" },
+    { "href": "#apropos", "text": "À propos" },
+    { "href": "#services", "text": "Services" },
+    { "href": "#competences", "text": "Compétences" },
+    { "href": "#temoignages", "text": "Témoignages" },
+    { "href": "#contact", "text": "Contact" }
+  ],
+  "hero": {
+    "greeting": "Étudiant en 3ème année de Kinésithérapie 👋",
+    "typewriterTexts": [
+      "Passionné par la rééducation",
+      "Écoute et bienveillance",
+      "Exercices thérapeutiques",
+      "Prévention et conseils",
+      "Accompagnement personnalisé"
+    ],
+    "buttons": [
+      { "text": "Me contacter", "href": "#contact", "class": "btn primary" },
+      { "text": "Voir mes services encadrés", "href": "#services", "class": "btn accent" }
+    ]
+  },
+  "about": {
+    "title": "À propos",
+    "paragraphs": [
+      "Je m'appelle <strong>Cylian Lacoppola</strong>, étudiant en 3ème année de kinésithérapie à l'<strong>Université de Szeged</strong> (classée 597ᵉ au QS World University Rankings 2026). Passionné par la <strong>kinésithérapie</strong> et l'<strong>ostéopathie</strong>, je réalise des séances <em>dans le cadre de mes études et de mes stages encadrés</em>.",
+      "Après mes études de kinésithérapie, je souhaite poursuivre un cursus en <strong>ostéopathie</strong>, puis me spécialiser en <strong>ostéopathie équine</strong> et <strong>kinésithérapie équine</strong> pour élargir mes compétences au domaine animalier."
+    ],
+    "highlights": [
+      "Intérêt: rééducation fonctionnelle et prévention",
+      "Valeurs: écoute, pédagogie, douceur",
+      "Objectif: t'aider à progresser pas à pas",
+      "Projet: spécialisation en thérapies équines"
+    ],
+    "badges": ["Anatomie", "Bilan", "Mobilisations", "Ostéopathie"]
+  },
+  "services": {
+    "title": "Services (encadrés)",
+    "items": [
+      {
+        "title": "Rééducation douce",
+        "description": "Exercices progressifs pour retrouver de la mobilité (encadré en stage)."
+      },
+      {
+        "title": "Conseils posturaux",
+        "description": "Gestes simples du quotidien pour moins de tensions et plus de confort."
+      },
+      {
+        "title": "Prévention",
+        "description": "Petites routines de mouvement pour prendre soin de son corps."
+      }
+    ],
+    "note": "Ces activités sont réalisées dans le cadre de ma formation, sous supervision."
+  },
+  "skills": {
+    "title": "Compétences",
+    "items": [
+      "Relation d'aide",
+      "Pédagogie",
+      "Exercices thérapeutiques",
+      "Respiration",
+      "Mobilisation"
+    ]
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "items": [
+      {
+        "quote": "À l'écoute et rassurant. Les explications sont claires.",
+        "author": "Personne accompagnée"
+      },
+      {
+        "quote": "Progrès réguliers grâce à des exercices simples à refaire.",
+        "author": "Retour de stage"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact 📬",
+    "description": "Tu veux me contacter ? Choisis ce qui te va le mieux.",
+    "quickLinks": [
+      { "text": "✉️ Email", "href": "mailto:cylianlacoppola@gmail.com" },
+      { "text": "📞 Téléphone", "href": "tel:+33628480262" }
+    ],
+    "form": {
+      "fields": [
+        {
+          "id": "name",
+          "label": "Ton prénom",
+          "type": "text",
+          "placeholder": "Ex: Léa",
+          "hint": "Écris juste ton prénom, c'est parfait.",
+          "required": true
+        },
+        {
+          "id": "email",
+          "label": "Ton e-mail",
+          "type": "email",
+          "placeholder": "Ex: lea@mail.com",
+          "hint": "Pour que je puisse te répondre.",
+          "required": true
+        },
+        {
+          "id": "message",
+          "label": "Ton message",
+          "type": "textarea",
+          "placeholder": "Dis-moi coucou !",
+          "rows": 4,
+          "required": true
+        }
+      ],
+      "buttons": [
+        { "type": "submit", "text": "Envoyer", "class": "btn primary" },
+        { "type": "reset", "text": "Effacer", "class": "btn" }
+      ]
+    }
+  },
+  "footer": {
+    "text": "Prenez soins de vous ❤️❤️"
+  },
+  "logos": ["🏥", "🦴", "🫁", "🧠", "🏃", "💪", "🧘", "🩺"]
+}

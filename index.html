@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cylian Lacoppola — Étudiant en Kinésithérapie</title>
-    <meta name="description" content="Étudiant en kinésithérapie — présentation, services encadrés, et contact." />
-    <meta property="og:title" content="Cylian Lacoppola — Étudiant en Kinésithérapie" />
-    <meta property="og:description" content="Présentation, services dans le cadre de mes études et moyens de contact." />
+    <title id="page-title">Cylian Lacoppola — Étudiant en Kinésithérapie</title>
+    <meta name="description" id="page-description" content="Étudiant en kinésithérapie — présentation, services encadrés, et contact." />
+    <meta property="og:title" id="og-title" content="Cylian Lacoppola — Étudiant en Kinésithérapie" />
+    <meta property="og:description" id="og-description" content="Présentation, services dans le cadre de mes études et moyens de contact." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="/" />
     <meta name="twitter:card" content="summary" />
@@ -21,19 +21,14 @@
       <div class="container header-inner">
         <div class="brand" aria-label="Accueil">
           <span class="logo" aria-hidden="true">🌟</span>
-          <span class="brand-name">Cylian Lacoppola</span>
+          <span class="brand-name" id="brand-name">Cylian Lacoppola</span>
         </div>
 
         <button class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Ouvrir le menu">☰</button>
 
         <nav id="nav" class="site-nav" role="navigation" aria-label="Navigation principale">
-          <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#temoignages">Témoignages</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul id="main-navigation">
+            <!-- Navigation will be populated by JavaScript -->
           </ul>
         </nav>
 
@@ -44,15 +39,14 @@
     <main id="main">
       <section id="accueil" class="hero">
         <div class="container">
-          <h1 data-reveal>Étudiant en 3ème année de Kinésithérapie 👋</h1>
-          <p class="subtitle" data-reveal>Je me forme pour aider les personnes à bouger mieux, avec bienveillance.</p>
+          <h1 id="hero-title" data-reveal>Étudiant en 3ème année de Kinésithérapie 👋</h1>
+          <p id="hero-subtitle" class="subtitle" data-reveal>Je me forme pour aider les personnes à bouger mieux, avec bienveillance.</p>
           <div class="typewriter-container">
             <span id="typewriter" class="typewriter-text"></span>
             <span class="cursor">|</span>
           </div>
-          <div class="hero-actions">
-            <a class="btn primary" href="#contact" data-reveal>Me contacter</a>
-            <a class="btn accent" href="#services" data-reveal>Voir mes services encadrés</a>
+          <div id="hero-actions" class="hero-actions">
+            <!-- Hero buttons will be populated by JavaScript -->
           </div>
         </div>
       </section>
@@ -60,31 +54,22 @@
       <section id="apropos" class="section">
         <div class="container grid">
           <div>
-            <h2 data-reveal>À propos</h2>
-            <p data-reveal>
-              Je m'appelle <strong>Cylian Lacoppola</strong>, étudiant en 3ème année de kinésithérapie à l'<strong>Université de Szeged</strong> (classée 597ᵉ au QS World University Rankings 2026). Passionné par la <strong>kinésithérapie</strong> et l'<strong>ostéopathie</strong>, je réalise des séances <em>dans le cadre de mes études et de mes stages encadrés</em>.
-            </p>
-            <p data-reveal>
-              Après mes études de kinésithérapie, je souhaite poursuivre un cursus en <strong>ostéopathie</strong>, puis me spécialiser en <strong>ostéopathie équine</strong> et <strong>kinésithérapie équine</strong> pour élargir mes compétences au domaine animalier.
-            </p>
-            <ul class="list">
-              <li>Intérêt: rééducation fonctionnelle et prévention</li>
-              <li>Valeurs: écoute, pédagogie, douceur</li>
-              <li>Objectif: t'aider à progresser pas à pas</li>
-              <li>Projet: spécialisation en thérapies équines</li>
+            <h2 id="about-title" data-reveal>À propos</h2>
+            <div id="about-content">
+              <!-- About paragraphs will be populated by JavaScript -->
+            </div>
+            <ul id="about-highlights" class="list">
+              <!-- Highlights will be populated by JavaScript -->
             </ul>
           </div>
           <div class="card profile">
             <div class="avatar" aria-hidden="true">🧑‍⚕️</div>
             <div class="profile-body">
               <h3>Formation</h3>
-              <p>Université de Szeged • 3ème année kinésithérapie • QS #597</p>
+              <p id="profile-info">Université de Szeged • 3ème année kinésithérapie • QS #597</p>
             </div>
-            <div class="badges">
-              <span class="badge">Anatomie</span>
-              <span class="badge">Bilan</span>
-              <span class="badge">Mobilisations</span>
-              <span class="badge">Ostéopathie</span>
+            <div id="about-badges" class="badges">
+              <!-- Badges will be populated by JavaScript -->
             </div>
           </div>
         </div>
@@ -92,100 +77,58 @@
 
       <section id="services" class="section alt">
         <div class="container">
-          <h2 data-reveal>Services (encadrés)</h2>
-          <div class="cards">
-            <article class="card service">
-              <h3>Rééducation douce</h3>
-              <p>Exercices progressifs pour retrouver de la mobilité (encadré en stage).</p>
-            </article>
-            <article class="card service">
-              <h3>Conseils posturaux</h3>
-              <p>Gestes simples du quotidien pour moins de tensions et plus de confort.</p>
-            </article>
-            <article class="card service">
-              <h3>Prévention</h3>
-              <p>Petites routines de mouvement pour prendre soin de son corps.</p>
-            </article>
+          <h2 id="services-title" data-reveal>Services (encadrés)</h2>
+          <div id="services-cards" class="cards">
+            <!-- Service cards will be populated by JavaScript -->
           </div>
-          <p class="note">Ces activités sont réalisées dans le cadre de ma formation, sous supervision.</p>
+          <p id="services-note" class="note">Ces activités sont réalisées dans le cadre de ma formation, sous supervision.</p>
         </div>
       </section>
 
       <section class="section logos">
         <div class="container">
           <h2 class="sr-only">Partenaires et technologies</h2>
-          <div class="track" aria-hidden="true">
-            <span class="logo bounce">🏥</span>
-            <span class="logo">🦴</span>
-            <span class="logo bounce">🫁</span>
-            <span class="logo">🧠</span>
-            <span class="logo bounce">🏃</span>
-            <span class="logo">💪</span>
-            <span class="logo bounce">🧘</span>
-            <span class="logo">🩺</span>
+          <div id="logos-track" class="track" aria-hidden="true">
+            <!-- Logos will be populated by JavaScript -->
           </div>
         </div>
       </section>
 
       <section id="competences" class="section">
         <div class="container">
-          <h2 data-reveal>Compétences</h2>
-          <div class="badges big">
-            <span class="badge">Relation d'aide</span>
-            <span class="badge">Pédagogie</span>
-            <span class="badge">Exercices thérapeutiques</span>
-            <span class="badge">Respiration</span>
-            <span class="badge">Mobilisation</span>
+          <h2 id="skills-title" data-reveal>Compétences</h2>
+          <div id="skills-badges" class="badges big">
+            <!-- Skills badges will be populated by JavaScript -->
           </div>
         </div>
       </section>
 
       <section id="temoignages" class="section alt">
         <div class="container">
-          <h2 data-reveal>Témoignages</h2>
-          <div class="testimonials">
-            <blockquote class="card">
-              <p>« À l'écoute et rassurant. Les explications sont claires. »</p>
-              <cite>— Personne accompagnée</cite>
-            </blockquote>
-            <blockquote class="card">
-              <p>« Progrès réguliers grâce à des exercices simples à refaire. »</p>
-              <cite>— Retour de stage</cite>
-            </blockquote>
+          <h2 id="testimonials-title" data-reveal>Témoignages</h2>
+          <div id="testimonials-container" class="testimonials">
+            <!-- Testimonials will be populated by JavaScript -->
           </div>
         </div>
       </section>
 
       <section id="contact" class="section alt">
         <div class="container">
-          <h2 data-reveal>Contact 📬</h2>
-          <p data-reveal>Tu veux me contacter ? Choisis ce qui te va le mieux.</p>
+          <h2 id="contact-title" data-reveal>Contact 📬</h2>
+          <p id="contact-description" data-reveal>Tu veux me contacter ? Choisis ce qui te va le mieux.</p>
 
-          <div class="quick-links">
-            <a class="btn" href="mailto:cylianlacoppola@gmail.com">✉️ Email</a>
-            <a class="btn" href="tel:+33628480262">📞 Téléphone</a>
+          <div id="contact-quick-links" class="quick-links">
+            <!-- Quick contact links will be populated by JavaScript -->
           </div>
 
           <form id="contactForm" class="form" novalidate>
-            <div class="form-row">
-              <label for="name">Ton prénom</label>
-              <input id="name" name="name" type="text" placeholder="Ex: Léa" required />
-              <div class="hint" data-for="name">Écris juste ton prénom, c'est parfait.</div>
+            <div id="contact-form-fields">
+              <!-- Form fields will be populated by JavaScript -->
             </div>
-            <div class="form-row">
-              <label for="email">Ton e-mail</label>
-              <input id="email" name="email" type="email" placeholder="Ex: lea@mail.com" required />
-              <div class="hint" data-for="email">Pour que je puisse te répondre.</div>
+            <div id="contact-form-actions" class="form-actions">
+              <!-- Form buttons will be populated by JavaScript -->
             </div>
-            <div class="form-row">
-              <label for="message">Ton message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Dis-moi coucou !" required></textarea>
-            </div>
-            <div class="form-actions">
-              <button type="submit" class="btn primary">Envoyer</button>
-              <button type="reset" class="btn">Effacer</button>
-            </div>
-            <p id="formStatus" role="status" class="status" aria-live="polite"></p>
+            <output id="formStatus" class="status" aria-live="polite"></output>
           </form>
         </div>
       </section>
@@ -193,11 +136,11 @@
 
     <footer class="site-footer" role="contentinfo">
       <div class="container">
-        <p>Prenez soins de vous ❤️❤️</p>
+        <p id="footer-text">Prenez soins de vous ❤️❤️</p>
       </div>
     </footer>
 
-    <script type="application/ld+json">
+    <script type="application/ld+json" id="schema-org">
     {
       "@context": "https://schema.org",
       "@type": "Person",
