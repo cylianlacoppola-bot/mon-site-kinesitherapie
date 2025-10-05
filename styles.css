@@ -140,9 +140,9 @@ body {
 /* Sections */
 .section { padding: 72px 0; }
 .section.alt { background: color-mix(in srgb, var(--surface) 70%, transparent); }
-.section#apropos { padding-top: 40px; }
-.section.logos { padding-top: 8px; }
-.section#competences { padding-top: 40px; }
+.section#apropos { padding-top: 40px; background: #e6f3fb; border-bottom: none; }
+.section.logos { padding-top: 72px; padding-bottom: 72px; background: #e6f3fb; }
+.section#competences { padding-top: 72px; padding-bottom: 72px; background: linear-gradient(180deg, #d2e7fa 0%, #c2dbf7 100%); }
 .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; align-items: start; }
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .card.service { min-height: 140px; }
@@ -163,7 +163,7 @@ body {
 
 .quick-links { display: flex; gap: 12px; margin: 8px 0 16px; flex-wrap: wrap; }
 
-.list { padding-left: 18px; margin-top: 56px; }
+.list { padding-left: 18px; margin-top: 32px; background: #c2dbf7; padding: 24px 18px; border-radius: 16px; max-width: 700px; margin-left: auto; margin-right: auto; box-shadow: 0 2px 16px rgba(59,130,246,0.08); }
 .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; background: color-mix(in srgb, var(--primary) 18%, var(--surface)); color: var(--surface-contrast); }
 
 .card { background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 90%, transparent), color-mix(in srgb, var(--surface) 70%, transparent)); border: 1px solid color-mix(in srgb, var(--text) 12%, transparent); border-radius: 16px; padding: 16px; box-shadow: 0 10px 30px color-mix(in srgb, var(--text) 10%, transparent); }
@@ -187,7 +187,7 @@ input:focus, textarea:focus { outline: 2px solid var(--ring); outline-offset: 2p
 .hint { font-size: 12px; color: var(--muted); }
 
 /* Footer */
-.site-footer { padding: 32px 0; text-align: center; color: var(--muted); }
+.site-footer { padding: 32px 0; text-align: center; color: var(--muted); background: #e6f3fb; }
 
 /* Hero embellishments */
 .hero {
@@ -216,7 +216,7 @@ input:focus, textarea:focus { outline: 2px solid var(--ring); outline-offset: 2p
 
 /* Moving logos */
 .logos { overflow: hidden; mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); }
-.logos .track { display: flex; gap: 40px; padding: 12px 0; will-change: transform; animation: marquee 18s linear infinite; }
+.logos .track { display: flex; gap: 40px; padding: 0 0 8px 0; will-change: transform; animation: marquee 18s linear infinite; }
 .logos img, .logos .logo { height: 32px; opacity: .9; filter: saturate(1.2) drop-shadow(0 2px 8px rgba(0,0,0,.25)); }
 .logos .logo.bounce { animation: float 6s ease-in-out infinite; }
 
